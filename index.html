@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Yelp->Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <div calss="hero">
+        <div class="heroimage" style="opacity: 1;
+        background-image: url('hero1.jpg');
+        ">
+
+        </div>
+        <div class="gradient">
+
+        </div>
+
+
+        <div class="main">
+            <header class="header1">
+                <a href="https://www.yelp.com/">
+                    <div class="logo"
+                    style="background-image:url(https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/2d2a7a4342fc/assets/img/brand/logo_desktop_white.svg)"
+                    id="logo">
+                </div>
+                </a>
+               
+                <div>
+                    <label>
+                        <input type="search" placeholder="Search">
+                    </label>
+
+                </div>
+                
+                <div class="btn-group">
+                    <button type="button" class="btnyelp btn btn-danger dropdown-toggle" data-toggle="dropdown"
+                        aria-expanded="false">
+                        Yelp for Business
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="https://business.yelp.com/">Add a Business</a>
+                        <a class="dropdown-item" href="https://business.yelp.com/products/business-page/">Claim your Business</a>
+                        <a class="dropdown-item" href="https://www.yelp.com/login">Log in to your Business account</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://business.yelp.com/">Explore yelp for Business</a>
+                    </div>
+                </div>
+                <button type="button" class="btnreview btn btn-outline-secondary">Write a Review</button>
+                <div>
+                    <button class="loginbutton">Login</button>
+                </div>
+                <div>
+                    <button class="singupbutton">Sign Up</button>
+                </div>
+                <div class="navbar">
+                    
+                    <div class="btn-group">
+                        <button type="button" class="btncolor btn btn-danger dropdown-toggle" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Restaurants
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="https://blog.yelp.com/community/the-top-indian-eatery-in-every-state/">Indian</a>
+                            <a class="dropdown-item" href="https://www.tripadvisor.com/Restaurants-g297586-c11-Hyderabad_Hyderabad_District_Telangana.html">Chinese</a>
+                            <a class="dropdown-item" href="https://www.tripadvisor.in/Restaurants-g297586-c26-Hyderabad_Hyderabad_District_Telangana.html">Italian</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://www.zomato.com/hyderabad/restaurants">More Specials</a>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btncolor btn btn-danger dropdown-toggle" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Home Services
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="https://dir.indiamart.com/hyderabad/home-gardening-services.html">Gardening</a>
+                            <a class="dropdown-item" href="https://www.nobroker.in/cleaning-services-in-hyderabad?utm_source=google&utm_medium=cpc&utm_campaign=Search_NoBroker_Cleaning_HomeServices_FHC&adgroup=Full_House_Cleaning_Exact&gclid=CjwKCAjw3oqoBhAjEiwA_UaLtnul-iKaSfpeGolr9jtpLK23uUnddQK5yKjNFchFWyvt21EBkUtGRRoCfxUQAvD_BwE">Home Cleaning</a>
+                            <a class="dropdown-item" href="https://plumblineservices.com/">Plumbing</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://www.moorehomeservices.net/">More Home Services</a>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btncolor btn btn-danger dropdown-toggle" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Auto Services
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="https://gomechanic.in/car-repair-near-me">Auto Repair</a>
+                            <a class="dropdown-item" href="https://gomechanic.in/car-repair-near-me">Oil change</a>
+                            <a class="dropdown-item" href="https://www.justdial.com/Hyderabad/Svs-Spare-Parts-and-Service-Opp-Sbi-Atm-As-Rao-Nagar/040PXX40-XX40-180606150542-Y1P2_BZDET">Spare Parts</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://gomechanic.in/car-repair-near-me">More Auto Services</a>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btncolor btn btn-danger dropdown-toggle" data-toggle="dropdown"
+                            aria-expanded="false">
+                            More
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="https://www.urbancompany.com/hyderabad-mens-grooming">Barbar Shops</a>
+                            <a class="dropdown-item" href="https://www.holidify.com/pages/hyderabad-nightlife-363.html">Night Life</a>
+                            <a class="dropdown-item" href="https://hoteltalk.app/types-of-bar-and-bar-service/">Bars</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://www.magicbricks.com/independent-house-for-rent-in-hyderabad-pppfr">Rental Rooms</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="content">
+                <h1>
+                    Give Soot The Boot
+                </h1>
+
+
+            </div>
+            <div clas="mm">
+                <input type="search" class="search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    </div>
+
+    </div>
+
+    <div class="recent">
+        <h1>
+            Recent Activity
+        </h1>
+    </div>
+
+    <div class="secondpart">
+
+        <div class="shop-section">
+            <div class="box">
+                <div class="box-content">
+                    <div class=" " style="display: flex;">
+                        <div class=" ">
+                            <div class=" css-w8rns  border-color--default__09f24__NPAKY"><a
+                                    href="/user_details?userid=2MwAr82LCggiII6H-s-Qaw" class="css-vzslx5"
+                                    target="_self"><img class=" css-1pz4y59"
+                                        src="https://s3-media0.fl.yelpcdn.com/photo/oVppkRmwpYoL5L236y0nTw/ss.jpg"
+                                        alt="Photo of Jenny O." height="40" width="40" loading="lazy"
+                                        draggable="true"></a></div>
+                        </div>
+                        <div class=" ">
+                            <div class=" user-passport-info  border-color--default__09f24__NPAKY"><span
+                                    class="fs-block css-ux5mu6" data-font-weight="bold"><a
+                                        href="/user_details?userid=2MwAr82LCggiII6H-s-Qaw" class="css-19v1rkv"
+                                        role="link">Jenny O.</a></span>
+                                <div
+                                    class=" responsive-hidden-small__09f24__qQFtj  border-color--default__09f24__NPAKY">
+                                    <div class=" " style="margin-left: 10px;"><span class=" css-qgunke">Added a
+                                            photo</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-img"
+                        style="background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/oFrigIwJwk9a4MXxSrZDkA/300s.jpg');">
+                    </div>
+
+                    <p>See more </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-content">
+                    <div class=" " style="display: flex;">
+                        <div class=" ">
+                            <div class=" css-w8rns  border-color--default__09f24__NPAKY"><a
+                                    href="/user_details?userid=2MwAr82LCggiII6H-s-Qaw" class="css-vzslx5"
+                                    target="_self"><img class=" css-1pz4y59"
+                                        src="https://s3-media0.fl.yelpcdn.com/photo/u7BnpoFSvqym5Tv36-QmHw/ss.jpg"
+                                        alt="Photo of Jenny O." height="40" width="40" loading="lazy"
+                                        draggable="true"></a></div>
+                        </div>
+                        <div class="">
+                            <div class=" "><span class="fs-block css-ux5mu6" data-font-weight="bold"><a
+                                        href="/user_details?userid=2MwAr82LCggiII6H-s-Qaw" class="css-19v1rkv"
+                                        role="link">Amanie M.</a></span>
+                                <div
+                                    class=" responsive-hidden-small__09f24__qQFtj  border-color--default__09f24__NPAKY">
+                                    <div class=" " style="margin-left: 10px;"><span class=" css-qgunke">Wrote a
+                                            Review</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-img"
+                        style="background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/U8iPOJbUArdwAWe2NxxC0g/o.jpg');">
+                    </div>
+                    <p style="color: black;">Mixed experience here. I had 4 appointments with the same flexologist.
+
+                        Continue reading... </p>
+
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-content">
+                    <div class=" " style="display: flex;">
+                        <div class=" ">
+                            <div class=" css-w8rns  border-color--default__09f24__NPAKY"><a
+                                    href="/user_details?userid=2MwAr82LCggiII6H-s-Qaw" class="css-vzslx5"
+                                    target="_self"><img class=" css-1pz4y59"
+                                        src="https://s3-media0.fl.yelpcdn.com/bphoto/triqSTnCWw2x4hfmi2OpPQ/300s.jpg"
+                                        alt="Photo of Jenny O." height="40" width="40" loading="lazy"
+                                        draggable="true"></a></div>
+                        </div>
+                        <div class="">
+                            <div class=" "><span class="fs-block css-ux5mu6" data-font-weight="bold"><a
+                                        href="/user_details?userid=2MwAr82LCggiII6H-s-Qaw" class="css-19v1rkv"
+                                        role="link">Brenda C.</a></span>
+                                <div
+                                    class=" responsive-hidden-small__09f24__qQFtj  border-color--default__09f24__NPAKY">
+                                    <div class=" " style="margin-left: 10px;"><span class=" css-qgunke">Added
+                                            Photo</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-img"
+                        style="background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/triqSTnCWw2x4hfmi2OpPQ/300s.jpg');">
+                    </div>
+                    <p>See more </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-content">
+                    <div class=" " style="display: flex;">
+                        <div class=" ">
+                            <div class=" css-w8rns  border-color--default__09f24__NPAKY"><a
+                                    href="/user_details?userid=2MwAr82LCggiII6H-s-Qaw" class="css-vzslx5"
+                                    target="_self"><img class=" css-1pz4y59"
+                                        src="	https://s3-media0.fl.yelpcdn.com/photo/U5oVG3FXWaHZGutfisDauQ/ss.jpg"
+                                        alt="Photo of Jenny O." height="40" width="40" loading="lazy"
+                                        draggable="true"></a></div>
+                        </div>
+                        <div class="">
+                            <div class=" "><span class="fs-block css-ux5mu6" data-font-weight="bold"><a
+                                        href="/user_details?userid=2MwAr82LCggiII6H-s-Qaw" class="css-19v1rkv"
+                                        role="link">Jhon P.</a></span>
+                                <div
+                                    class=" responsive-hidden-small__09f24__qQFtj  border-color--default__09f24__NPAKY">
+                                    <div class=" " style="margin-left: 10px;"><span class=" css-qgunke">Wrote a
+                                            review</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-img"
+                        style="background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/9x3q2kZ8p7LQid-AxxxzZw/o.jpg');">
+                    </div>
+                    <p style="color: black;">I've had the battery and screen replaced on my MSoft Surface Pro5 on
+                        separate occasions. </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-content">
+                    <div class=" " style="display: flex;">
+                        <div class=" ">
+                            <div class=" css-w8rns  border-color--default__09f24__NPAKY"><a
+                                    href="/user_details?userid=2MwAr82LCggiII6H-s-Qaw" class="css-vzslx5"
+                                    target="_self"><img class=" css-1pz4y59"
+                                        src="https://s3-media0.fl.yelpcdn.com/photo/QJHTu_CDkXWXTLjVfuWiRw/ss.jpg"
+                                        alt="Photo of Jenny O." height="40" width="40" loading="lazy"
+                                        draggable="true"></a></div>
+                        </div>
+                        <div class="">
+                            <div class=" "><span class="fs-block css-ux5mu6" data-font-weight="bold"><a
+                                        href="/user_details?userid=2MwAr82LCggiII6H-s-Qaw" class="css-19v1rkv"
+                                        role="link">Monica B.</a></span>
+                                <div
+                                    class=" responsive-hidden-small__09f24__qQFtj  border-color--default__09f24__NPAKY">
+                                    <div class=" " style="margin-left: 10px;"><span class=" css-qgunke">Added 1
+                                            Photo</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-img"
+                        style="background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/_IWO_j97mL9HTTkirIAouA/300s.jpg');">
+                    </div>
+                    <p>See more </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-content">
+                    <div class=" " style="display: flex;">
+                        <div class=" ">
+                            <div class=" css-w8rns  border-color--default__09f24__NPAKY"><a
+                                    href="/user_details?userid=2MwAr82LCggiII6H-s-Qaw" class="css-vzslx5"
+                                    target="_self"><img class=" css-1pz4y59"
+                                        src="https://s3-media0.fl.yelpcdn.com/photo/MU4PgZGSYRTWEnVnQuZRPw/ss.jpg"
+                                        alt="Photo of Jenny O." height="40" width="40" loading="lazy"
+                                        draggable="true"></a></div>
+                        </div>
+                        <div class="">
+                            <div class=" "><span class="fs-block css-ux5mu6" data-font-weight="bold"><a
+                                        href="/user_details?userid=2MwAr82LCggiII6H-s-Qaw" class="css-19v1rkv"
+                                        role="link">Sunil R.</a></span>
+                                <div
+                                    class=" responsive-hidden-small__09f24__qQFtj  border-color--default__09f24__NPAKY">
+                                    <div class=" " style="margin-left: 10px;"><span class=" css-qgunke">Added 1
+                                            Photo</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-img"
+                        style="background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/1SNbs99Pnui0FOCvyVZU9A/300s.jpg');">
+                    </div>
+                    <p>See more </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-content">
+                    <div class=" " style="display: flex;">
+                        <div class=" ">
+                            <div class=" css-w8rns  border-color--default__09f24__NPAKY"><a
+                                    href="/user_details?userid=2MwAr82LCggiII6H-s-Qaw" class="css-vzslx5"
+                                    target="_self"><img class=" css-1pz4y59"
+                                        src="https://s3-media0.fl.yelpcdn.com/bphoto/4xJd564vJuwYpWdZqnb5Kw/o.jpg"
+                                        alt="Photo of Jenny O." height="40" width="40" loading="lazy"
+                                        draggable="true"></a></div>
+                        </div>
+                        <div class="">
+                            <div class=" "><span class="fs-block css-ux5mu6" data-font-weight="bold"><a
+                                        href="/user_details?userid=2MwAr82LCggiII6H-s-Qaw" class="css-19v1rkv"
+                                        role="link">Sandyn W.</a></span>
+                                <div
+                                    class=" responsive-hidden-small__09f24__qQFtj  border-color--default__09f24__NPAKY">
+                                    <div class=" " style="margin-left: 10px;"><span class=" css-qgunke">Wrote a
+                                            review</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-img"
+                        style="background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/4xJd564vJuwYpWdZqnb5Kw/o.jpg');">
+                    </div>
+                    <p>See more </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="thirdpart">
+        <h1>Categories</h1>
+    </div>
+    <div class="categories">
+        <button class="categoriesbutton">
+
+            <img class=""
+                src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/8bc05b287157/assets/img/svg_illustrations/40x40_food_v2.svg">
+            Restaurants
+
+        </button>
+        <button class="categoriesbutton">
+
+            <img class=""
+                src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/488aeb87ef6e/assets/img/svg_illustrations/40x40_gift_shops_v2.svg">
+            Shopping
+
+        </button>
+        <button class="categoriesbutton">
+
+            <img class=""
+                src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/1397897c21a5/assets/img/svg_illustrations/40x40_new_v2.svg">
+            NightLife
+
+        </button>
+        <button class="categoriesbutton">
+
+            <img class=""
+                src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/0372f8e93aa9/assets/img/svg_illustrations/40x40_set_objective_v2.svg">
+            Active Life
+
+        </button>
+        <button class="categoriesbutton">
+
+            <img class=""
+                src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/5bd5d2648742/assets/img/svg_illustrations/40x40_barbers_v2.svg">
+            Beauty & Spas
+        </button>
+        <button class="categoriesbutton">
+
+            <img class=""
+                src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/5967f38fe621/assets/img/svg_illustrations/40x40_auto_v2.svg">
+            Automotive
+
+        </button>
+        <button class="categoriesbutton">
+
+            <img class=""
+                src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/7fc312973cf8/assets/img/svg_illustrations/40x40_home_services_v2.svg">
+            Home Services
+
+        </button>
+        <button class="categoriesbutton">
+
+            <img class=""
+                src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/0372f8e93aa9/assets/img/svg_illustrations/40x40_set_objective_v2.svg">
+            More
+
+        </button>
+    </div>
+
+    <footer>
+        <div class="foot-panel2">
+            <ul>
+                <p>About</p>
+                <a>About Yelp</a>
+                <a>Careers</a>
+                <a>Investor Releases</a>
+                <a>Turst & Safety</a>
+                <a>Content Guidelines</a>
+                <a>Accessibility Statement</a>
+                <a>Terms Service</a>
+                <a>Privacy Policy</a>
+                <a>Ad Choices</a>
+                <a>Your Privacy Choices</a>
+            </ul>
+            <ul>
+                <p>Discover</p>
+                <a>Yelp Project Cost Guides</a>
+                <a>Collections</a>
+                <a>Talk</a>
+                <a>Events</a>
+                <a>Yelp Blog</a>
+                <a>Support</a>
+                <a>Yelp Mobile</a>
+                <a>Developers</a>
+                <a>RSS</a>
+            </ul>
+            <ul>
+                <p>Yelp for Business</p>
+                <a>Sell on Buy-It</a>
+                <a>Business Owner Login</a>
+                <a>Claim your Business Page</a>
+                <a>Advertise on Yelp</a>
+                <a>Yelp for Restaurant Owners</a>
+                <a>Table Management</a>
+                <a>Business Success Stories</a>
+                <a>Business Support</a>
+                <a>Yelp Blog for Business</a>
+
+            </ul>
+            <ul>
+                <p>Languages</p>
+                <a>English</a>
+
+            </ul>
+            <ul>
+                <p>Countries</p>
+                <a>United States</a>
+
+            </ul>
+
+        </div>
+        <div class="foot-panel4">
+            <div class="pages">
+                <a>Conditions Of Use</a>
+                <a>Privacy Notice</a>
+                <a>Your Ads Privacy Choices</a>
+            </div>
+            <div class="copyright">
+                <a>© 1996-2023, Yelp.com, Inc. or its affiliates</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
